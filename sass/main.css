@@ -3134,7 +3134,7 @@ button:disabled,
   padding: 1em;
   border-radius: 4px;
   border-bottom: 0;
-  color: #ffffff;
+  color: #e9e4e4;
   text-align: center;
   text-decoration: none;
   z-index: 3;
@@ -3143,7 +3143,7 @@ button:disabled,
   margin: 0;
 }
 .tiles article > a:hover {
-  color: #ffffff !important;
+  color: #e9e4e4 !important;
 }
 .tiles article > a h2 {
   margin: 0;
@@ -3196,9 +3196,6 @@ body:not(.is-touch) .tiles article:hover > .image:after {
 body:not(.is-touch) .tiles article:hover .content {
   max-height: 15em;
   opacity: 1;
-}
-* + .tiles {
-  margin-top: 2em;
 }
 body.is-loading .tiles article {
   -moz-transform: scale(0.9);
@@ -3287,10 +3284,10 @@ body.is-touch .tiles article .content {
 }
 .pagination-container .pagination.disabled a {
   cursor: default;
-  color: #f6f6f6;
+  color: #dfdfdf;
 }
 .pagination-container .pagination.disabled a:hover {
-  color: #f6f6f6 !important;
+  color: #dfdfdf !important;
 }
 
 #main .inner .gallery-container {
@@ -3635,6 +3632,7 @@ body.is-menu-visible #menu .close {
 }
 #footer > .inner > * > :last-child {
   margin-bottom: 0;
+  font-size: 0.8em;
 }
 #footer > .inner section:nth-child(1) {
   width: calc(66% - 6em);
@@ -3669,6 +3667,7 @@ body.is-menu-visible #menu .close {
   border-left: 0;
   padding-left: 0;
   margin-left: 0;
+  font-size: 0.8em;
 }
 @media screen and (max-width: 1280px) {
   #footer {
