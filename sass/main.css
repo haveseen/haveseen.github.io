@@ -3632,7 +3632,7 @@ body.is-menu-visible #menu .close {
 }
 #footer > .inner > * > :last-child {
   margin-bottom: 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 #footer > .inner section:nth-child(1) {
   width: calc(66% - 6em);
@@ -3644,13 +3644,17 @@ body.is-menu-visible #menu .close {
 }
 #footer > .inner .about_footer {
   border-bottom: 0;
+  font-size: 1.5em;
+}
+#footer > .inner .follow {
+  font-size: 1.5em;
 }
 #footer > .inner .copyright {
   width: 100%;
   padding: 0;
   margin-top: 5em;
   list-style: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: rgba(88, 88, 88, 0.5);
 }
 #footer > .inner .copyright a {
@@ -3667,7 +3671,7 @@ body.is-menu-visible #menu .close {
   border-left: 0;
   padding-left: 0;
   margin-left: 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 @media screen and (max-width: 1280px) {
   #footer {
