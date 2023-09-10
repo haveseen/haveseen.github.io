@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!--favicon-->
+    
+        <link rel="icon" href="/images/favicon.ico">
+    
+
+    <!--Description-->
+    
+        <meta name="description" content="Gradient Descent is an optimization algorithm commonly used in machine learning and artificial intelligence to iteratively approach the minimum deviat">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Hanna Li">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="GRADIENT DESCENT"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Haveseen"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>GRADIENT DESCENT - Haveseen</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Haveseen</span>
+        </a>
+
+        <!-- languages
+        <ul class="languages">
+            <li><a href="">中</a></li>
+            <li><a href="">日</a></li>
+            <li><a href="">En</a></li>
+        </ul> -->
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about">About</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>GRADIENT DESCENT</h1>
+
+
+    <span class="image main"><img src="/images/gd_detail.jpg" alt="" /></span>
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p><font size=4>Gradient Descent is an optimization algorithm commonly used in machine learning and artificial intelligence to iteratively approach the minimum deviation model. Its basic idea can be likened to descending a mountain. It starts from the current position and seeks the steepest direction downhill. If the measurements are too frequent, it can be time-consuming, and if they are too infrequent, it may deviate from the path. The key components of Gradient Descent include Cost Function, Gradient and Learning Rate.</p>
+<h3 id="Batch-Gradient-Descent"><a href="#Batch-Gradient-Descent" class="headerlink" title="Batch Gradient Descent"></a>Batch Gradient Descent</h3><p>In Batch Gradient Descent, the entire training dataset is used for each learning iteration. This ensures that each update moves in the correct direction, ultimately guaranteeing convergence to an extreme value point. Convex functions converge to global extreme value points, while non-convex functions may converge to local extreme value points. However, the drawback is that it requires a long learning time and consumes a significant amount of memory.</p>
+<h3 id="Stochastic-Gradient-Descent"><a href="#Stochastic-Gradient-Descent" class="headerlink" title="Stochastic Gradient Descent"></a>Stochastic Gradient Descent</h3><p>Stochastic Gradient Descent uses only one randomly selected data point per iteration. Although SGD requires many more iterations compared to BGD, each learning step is very fast. The disadvantage is that each update may not proceed in the correct direction, resulting in high parameter update variance, leading to significant fluctuations in the loss function. However, if the objective function has basin regions, SGD may redirect the optimization from the current local minimum to another, better local minimum. This means that for non-convex functions, SGD may eventually converge to a better local minimum or even the global minimum.</p>
+<h3 id="Mini-Batch-Gradient-Descent"><a href="#Mini-Batch-Gradient-Descent" class="headerlink" title="Mini-Batch Gradient Descent"></a>Mini-Batch Gradient Descent</h3><p>Mini-Batch Gradient Descent is a compromise between BGD and SGD. It involves using multiple data points in each iteration. If the batch size is chosen appropriately, Mini-Batch Gradient Descent can offer faster and more stable convergence compared to SGD. It also reduces the fluctuation near the optimal solution without losing the advantages of both SGD and BGD.</p>
+<p>The ultimate goal of Gradient Descent is to find the values of the model parameters that minimize the cost function, leading to a model that makes accurate predictions on new, unseen data. </p>
+</font>
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2><a href="/about" class="about_footer">About</a></h2>
+            <div>
+                <font color="#f2849e">♡ Welcome to My Creative Corner ♡</font><br>I am a Tech Enthusiast and Writer,<br>who aim to distill experiences, enhance reflection and learning, occasionally, craft tales of science fiction and romance. Let's share unbridled passion for innovation.<br>I Hope You Enjoy !
+            </div>
+        </section>
+        <section>
+            <h2 class="follow">Follow</h2>
+            <ul class="icons">
+                
+                    <li><a href="https://www.linkedin.com/in/hannali007" class="icon style2 fa-linkedin" target="_blank" ><span class="label">LinkedIn</span></a></li>
+                
+                <!--  -->
+                
+                    <li><a href="https://github.com/haveseen" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                    <li><a href="https://www.instagram.com/haveseen__/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+
+                <!--  -->
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>Since 2023 </li>
+            <li>&copy; Haveseen. All rights reserved</li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- skel -->
+
+<script src="/js/skel.min.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
